@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Split Screen Layout</title>
+    <style>
+        /* Reset body margin and height */
+        body, html {
+            margin: 0px;
+            height: 100px;
+        }
+
+        /* Container styling */
+        .split-container {
+            display: flex;
+            height: 100vh; /* Full screen height */
+        }
+
+        /* Left side (First Part) */
+        .left-side {
+            flex: 1; /* Equal width */
+            background-color: orange;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 2rem;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        /* Right side (Second Part) */
+        .right-side {
+            flex: 1;
+            background-color: blue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 2rem;
+            font-family: 'Times New Roman', Times, serif;
+        }
+    </style>
+</head>
+<body>
+    <!-- Split container -->
+    <div class="split-container">
+        <div class="left-side">
+            First Part
+        </div>
+        <div class="right-side">
+            Second Part
+        </div>
+    </div>
+</body>
+</html>

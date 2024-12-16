@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Positioning</title>
+    <style>
+        .container {
+            display: flex;
+border: 3px dashed black;
+width: 400px;
+        }
+        .box {
+            width: 100px;
+            height: 100px;
+            border: 1px dotted black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: black;
+        }
+        .static .box {
+            background-color: red;
+        }
+        .relative .box {
+            background-color: red;
+        }
+        .absolute .box {
+            background-color: red;
+        }
+        .static .two {
+            background-color: green;
+        }
+        .relative .two {
+            background-color: green;
+            position: relative;
+            top: 20px;
+            left: 20px;
+
+        }
+        .absolute .two {
+            background-color: green;
+            position: absolute;
+            top: 5px;
+            left: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h3>position: static</h3>
+        <div class="container static">
+            <div class="box">One</div>
+            <div class="box two">Two</div>
+            <div class="box">Three</div>
+            <div class="box">Four</div>
+        </div>
+    </div>
+    <div>
+        <h3>position: relative</h3>
+        <div class="container relative">
+            <div class="box">One</div>
+            <div class="box two">Two</div>
+            <div class="box">Three</div>
+            <div class="box">Four</div>
+        </div>
+    </div>
+    <div>
+        <h3>position: absolute</h3>
+        <div class="container absolute" style="position: relative;">
+            <div class="box">One</div>
+            <div class="box two">Two</div>
+            <div class="box">Three</div>
+            <div class="box">Four</div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colored Stripes</title>
+    <style>
+        .container {
+            display: flex;
+            border: 5px solid gold;
+        }
+        .stripe {
+            flex: 1;
+            height: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            font-size: 3em;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+        .stripe:nth-child(1) { background-color: green; }
+        .stripe:nth-child(2) { background-color: yellow; color: black; }
+        .stripe:nth-child(3) { background-color: purple; }
+        .stripe:nth-child(4) { background-color: gray; }
+        .stripe:nth-child(5) { background-color: blue; }
+        .stripe:nth-child(6) { background-color: orange; }
+        .stripe:nth-child(7) { background-color: pink; color: black; }
+        .stripe:nth-child(8) { background-color: red; }
+        .stripe:nth-child(9) { background-color: brown; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="stripe">1</div>
+        <div class="stripe">2</div>
+        <div class="stripe">3</div>
+        <div class="stripe">4</div>
+        <div class="stripe">5</div>
+        <div class="stripe">6</div>
+        <div class="stripe">7</div>
+        <div class="stripe">8</div>
+        <div class="stripe">9</div>
+    </div>
+</body>
+</html>

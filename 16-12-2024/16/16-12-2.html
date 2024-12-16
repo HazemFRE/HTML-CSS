@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Grid Layout</title>
+    <style>
+        /* General body styling */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Image grid container */
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* Three equal columns */
+            grid-template-rows: repeat(3, 1fr);
+            gap: 20px; /* Space between images */
+        }
+
+        /* Image styling */
+        .image-grid img {
+            width: 600px;
+            height: 400px;
+            object-fit: cover; /* Maintain aspect ratio and fill */
+            border-radius: 5px; /* Rounded corners */
+        }
+/* 
+        img {
+            width: 200px;
+            height: 100px;
+        }
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+        } */
+
+    </style>
+</head>
+<body>
+    <!-- Image Grid -->
+    <div class="image-grid">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAuCCOE50bgtOQ70uQNSveO7LDcO0ofIiJxg&s" >
+        <img src="https://pbs.twimg.com/media/FdIEtO3XEAMOXUM.jpg:large" >
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZTVoA6jK2mqX-dO3zyfAbSdGL-OxmCJo_yw&s" >
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTy0St-Uz-QH8bmfPAh61KlgWPWSX6cMZPUKg&s" >
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6tu6hB1r0O5bUFedyLN1Uw9arYf1VYMCc4A&s" >
+        <img src="https://live-amid-nature-in-the-most-beautiful-ajloun-hut-umm-al-manabi.albooked.com/data/Photos/OriginalPhoto/13120/1312063/1312063585/Ajloun-Wooden-Huts-Live-Amid-Nature-Hotel-Umm-al-Manabi-Exterior.JPEG" > 
+        <img src="https://live-amid-nature-in-the-most-beautiful-ajloun-hut-umm-al-manabi.albooked.com/data/Photos/OriginalPhoto/13173/1317324/1317324478/Ajloun-Wooden-Huts-Live-Amid-Nature-Hotel-Umm-al-Manabi-Exterior.JPEG" >
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0lZey_MXuRQjXj--e08x6G72NIoLOY5p1qA&s" >
+    </div>
+</body>
+</html>
